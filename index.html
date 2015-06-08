@@ -68,6 +68,12 @@
 		<p>Day 5: June 5, 2015<br><br>A lot of progress today. Moving into late yesterday afternoon I<br>was struggling to see anything in terms of functions and loops.<br>Started understanding it before leaving yesterday, and actually<br>woke up at 1:30am with an idea about how to substantially shrink<br>my dice rolling function. Initially, I had established a separate<br>random number generator for each of the six die. While sleeping I<br>came up with:<br><br>from random import randit<br><br>def dieRoll(dieSelection):<br>roll=randit(1,dieSelection)<br>return roll<br><br>Spent all of today re-writing the dice program in functions and<br>loops that operate with a Player class object. Still using a little<br>longhand thinking in that I am taking player name input in one<br>function, then converting it to an object in another:<br><br>#get player names<br>def getNames(i):<br>playersList=[]<br>while len(playersList)<i:<br>input = raw_input("Player enter your name >")<br>playersList.append(input)<br>return playersList<br><br>use playersList to create objects<br>def convertToObjects(pL):<br>playerObjects=[]<br>for i in pL:<br>player = Player(i)<br>playerObjects.append(player)<br>return playerObjects<br><br>Also, taking in number of players separately:<br><br>#get number of players<br>def numPlayers():<br> input = raw_input("Enter number of players >")<br>input = int(input)<br>return input<br><br>Eventhough, all of these things could be done separately there is, for<br>now anyway, use for me in thinking about every aspect of the program<br>separately, and writing them as individual functions.</p>
 		<hr/>
 	</div>
+	<div class="col-sm-12">
+		<small><p class="muted" style="float:right;">06/08/2015</p></small>
+		<h5>Day 6</h5>
+		<p>Day 6, June 8, 2015<br>Starting to think I've over shot with my attempt to simplify my code writing. I've essentially banished all if/elif/else statements in exchange for functions and loops that I can't entirely figure out how to use. The logic is clear enough, and I'm getting the hang of scope and syntax, but I think ultimately the shorthand is unnecessarily short. It's left me stuck trying to do too many things that at this point are not intuitive at the expense of those things that are intuitive. Importantly, the intuitive things are usable which leaves the entire exercise creating more problems than not. It's obvious I need to find a balance</p>
+		<hr/>
+	</div>
 </div>
 
 
