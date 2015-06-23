@@ -1,0 +1,52 @@
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.shadow {
+	text-shadow: 2px 2px 2px #aaa;
+}
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	float: left;
+	font-size: 3.25em;
+	text-align: center;
+	padding-bottom: 15%;
+	margin-bottom: 20px;
+	margin-top: -10px;
+	display: block;
+}
+
+.container-fluid {
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 6px 6px 2px #999;
+	margin: 10px;
+}
+
+#painting {
+	width: 30%;
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 6px 6px 2px #999;
+	margin: 10px;
+}
+
+#printmaking {
+	width: 30%;
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 6px 6px 2px #999;
+	margin: 10px;
+}
+
+#threeD {
+	width: 30%;
+	background-color: #eee;
+	border-radius: 10px;
+	box-shadow: 6px 6px 2px #999;
+	margin: 10px;
+}
