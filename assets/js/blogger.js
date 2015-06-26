@@ -1,8 +1,23 @@
+/*  PAGER FUNCTION IS IN GETBLOG(), SO "NUM" VALUE CAN BE REFERENCED
 function pager(pages) {
 	$("#pag").bootpag({
 		total: pages
 	}).on("page", function(event, num){
 	 	$(".content").html("Page" + num);
+	});
+}
+*/
+
+function defaultPageLoad(postsPerPage) {
+	$.getJSON('entries.json', function(jd) {	
+	for (i = 0; i < (postsPerPage - 1); i++) {
+		var key = i;
+		var date = jd.entries[i].date;
+		var title = jd.entries[i].title;
+		var text = jd.entries[i].text;
+
+		$("#blog").append("<div id=" +key+ " class='col-sm-12 blogpost'><small><p id='date' class='muted' style='float:right;'>" +date+ " </p></small><h5 id='title'>" +title+ " </h5><p id='blogpost'>" +text+ " </p><hr/></div>");			
+	}
 	});
 }
 
@@ -29,8 +44,7 @@ function getblog(postsPerPage) {
 		total: pages
 	}).on("page", function(event, num){
 	 	$(".content").html("Page" + num);
-	 	console.log(num);
-
+	 	
 	//CLEAR PREVIOUS POSTS
 	$("#blog").empty();
 	
@@ -47,11 +61,11 @@ function getblog(postsPerPage) {
 		$("#blog").append("<div id=" +key+ " class='col-sm-12 blogpost'><small><p id='date' class='muted' style='float:right;'>" +date+ " </p></small><h5 id='title'>" +title+ " </h5><p id='blogpost'>" +text+ " </p><hr/></div>");
 	}
 	});
-
-	pager(pages)
-
 	});
 }
 
 
-$(document).ready(getblog(5));
+var postsPerPage = 5;
+
+$(document).ready(defaultPageLoad(postsPerPage));
+$(document).ready(getblog(postsPerPage));
