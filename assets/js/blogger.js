@@ -10,7 +10,7 @@ function pager(pages) {
 
 function defaultPageLoad(postsPerPage) {
 	$.getJSON('entries.json', function(jd) {	
-	for (i = 0; i < (postsPerPage - 1); i++) {
+	for (i = 0; i <= (postsPerPage - 1); i++) {
 		var key = i;
 		var date = jd.entries[i].date;
 		var title = jd.entries[i].title;
