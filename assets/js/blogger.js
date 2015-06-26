@@ -21,7 +21,11 @@ function defaultPageLoad(postsPerPage) {
 	});
 }
 
-function getblog(postsPerPage) {
+function getSelection() {
+
+}
+
+function getBlog(postsPerPage) {
 	//GET JSON
 	$.getJSON('entries.json', function(jd) {
 	
@@ -29,17 +33,18 @@ function getblog(postsPerPage) {
 	var entries = [];
 	for (var i = 0; i < jd.entries.length; i++) {
 		var key = i;
-		var date = jd.entries[i].date;
-		var title = jd.entries[i].title;
-		var text = jd.entries[i].text;
 		entries.push(key);
 	}
 
 	//PROGRAMMATICALLY SET NUMBER OF PAGES
-	var pages = Math.floor(entries.length / postsPerPage);
-	pages += 1;
+	if (entries.length % postsPerPage === 0) {
+		var pages = entries.length / postsPerPage;
+	} else {
+		var pages = Math.floor(entries.length / postsPerPage);
+		pages += 1;
+	}
 	
-	//PAGER() INSIDE GETBLOG  ** with content generation inside "pager" code **  TO ACCESS "NUM"
+	//PAGER() INSIDE GETBLOG()  ** with CLEAR & ADD POSTS inside "pager" code **  TO ACCESS "NUM"
 	$("#pag").bootpag({
 		total: pages
 	}).on("page", function(event, num){
@@ -68,4 +73,4 @@ function getblog(postsPerPage) {
 var postsPerPage = 5;
 
 $(document).ready(defaultPageLoad(postsPerPage));
-$(document).ready(getblog(postsPerPage));
+$(document).ready(getBlog(postsPerPage));
