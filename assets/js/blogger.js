@@ -1,13 +1,3 @@
-/*  PAGER FUNCTION IS IN GETBLOG(), SO "NUM" VALUE CAN BE REFERENCED
-function pager(pages) {
-	$("#pag").bootpag({
-		total: pages
-	}).on("page", function(event, num){
-	 	$(".content").html("Page" + num);
-	});
-}
-*/
-
 function defaultPageLoad(postsPerPage) {
 	$.getJSON('entries.json', function(jd) {	
 	for (i = 0; i <= (postsPerPage - 1); i++) {
@@ -69,8 +59,68 @@ function getBlog(postsPerPage) {
 	});
 }
 
+function search() {
+    $("#search-second").keyup(function(){
+ 
+        // Retrieve the input field text and reset the count to zero
+        var filter = $(this).val(), count = 0;
+ 
+ 		// Loop through the comment list
+        $(".blogpost").each(function(){
+ 
+            // If the list item does not contain the text phrase fade it out
+            if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                $(this).fadeOut();
+ 
+            // Show the list item if the phrase matches and increase the count by 1
+            } else {
+                $(this).show();
+                count++;
+            }
+        });
+ 
+        // Update the count
+        var numberItems = count;
+        if (count > 0) {
+        	$("#filter-count").show();
+        	$("#filter-count").text("Number of Comments = "+count);
+        } else {
+        	$("#filter-count").hide();
+        }
+    });
+}
 
+function hideContentForSearch() {
+	$("#search-second").focus(function() {
+		$(".searchHide").hide();
+	});
+}
+
+function showHiddenContent() {
+	$("#search-second").focusout(function() {
+		$(".searchHide").show();
+		$("#filter-count").hide();
+	});
+}
+
+function useTopSearch() {
+	$("#search2").keyup(function() {
+		var input = $(this).val();
+		$("#search-second").val(input);
+		$("#search2").val("");
+		$("#search-second").focus();
+	});
+}
+
+
+//BASIC BLOG GENERATION
 var postsPerPage = 5;
 
 $(document).ready(defaultPageLoad(postsPerPage));
 $(document).ready(getBlog(postsPerPage));
+
+//SEARCH FUNCTIONALITY
+$(document).ready(search());
+$(document).ready(hideContentForSearch());
+$(document).ready(showHiddenContent());
+$(document).ready(useTopSearch());

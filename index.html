@@ -48,13 +48,13 @@
          <ul class="nav navbar-nav navbar-right">
             <li><a href="http://www.devcodecamp.com" target="_blank"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> <img src="assets/img/devcodecamp.png" alt="devcodecamp"></a></li>  
             <li><input type="text" id="search-second" class="form-control" placeholder="Search Blog" style="float:right; margin-top:18px;"></li>
-
+            
          </ul>
       </div>
    </nav>
 
    <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-8 searchHide">
          <h3>Welcome,</h3> 
          <p>Following a varied educational background, and after years in the real estate industry I'm now studying software development at <a href="http://www.devcodecamp.com/" target="_blank">devCodeCamp</a>. I've found coding to be a wholly unique challenge that pushes one's way of thinking while fostering a rare blend of creativity and technical understanding.</p>
          <!-- <center>
@@ -66,7 +66,7 @@
          </p>
          </center> -->
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 searchHide">
          <h2>&nbsp;&nbsp;Contact me</h2>
          <div class="list-group">
             <a href="mailto:mrunkle_he@dev.bse.edu" target="_top" class="list-group-item">
@@ -84,13 +84,13 @@
    </div>
      
    <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 searchHide">
          <h2 class="shadow center">Beyond Code</h2>
          <hr/>
       </div>
    </div>
 
-   <div class="row">
+   <div class="row searchHide">
       <div id="painting" class="col-sm-4">
          <h4 class="shadow center">Painting</h4>
          <p>Most of my time in college was spent as an art student, but I left academic art after three years. Early non-representational painting began influencing my thinking, and I started winning some recognition in group exhibitions as a watercolorist. After having my first solo exhibit I retired myself indefinitely while I studied a number of things I thought were necessary to progress my work. Along the way early twentieth century American scene paitning became a strong influence, and I began combining what I think of as the vocabulary of modern non-representational painting with the subject matter of the American scene painters. This work began earning some recognition eventually leading to representation at two galleries, and publication in the national magazine Professional Artist. My paintings can be viewed at <a href="http://www.matthewrunkle.com/" target="_blank">MatthewRunkle.com</a>.</p>
@@ -118,7 +118,7 @@
 <!--    /.Blog     -->
 
 <!--  Added in Lab 18  -->
-    <div class="row"> 
+    <div class="row">
         <div class="col-md-8"> 
             <h2>Blog</h2> 
         </div> 
@@ -126,8 +126,8 @@
             <span style="height:50px;"></span> 
 
 <!-- SEARCH FUNCTIONALITY -->
-            <input type="text" class="search form-control" id="search2" placeholder="Search Blog" style="float:right;" />
-
+            <input type="text" class="search form-control searchHide" id="search2" placeholder="Search Blog" style="float:right;" />
+            <span id="filter-count"></span>
             <!-- INSERT POSTS AS LIST ITEMS WITH JQUERY FOR SEARCH -->
 
         </div>

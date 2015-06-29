@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"06/29/2015",
+		"title":"Day 21",
+		"text":"Spent the morning working on my blog project. The search function is now essentially complete, I have to add the feature that disregards whitespace, and I have one little bit of buggy functionality related to backspaces in the secondary search field. I don't think either of these issues will require much time to resolve.<br><br>We started a new group project today building an application that allows a user to create survey forms. I started by writing a basic html structure to begin testing navigation functions for adding questions to the survey as well as displaying a sidebar overview that will functiona primarily for bookmark reference. I still need to work on adding new questions, and properly displaying the question panes. Will need to work out better styling soon, but for now trying to address the larger problems."
+		},
+		{
 		"date":"06/26/2015",
 		"title":"Day 20",
 		"text":"Finished the pagination for my blog. Ultimately, no small feat. Not sure how many hours I had in that part of the project, but it took quite a while. Last night I was struggling to clear the old posts on a new page selection, then I realized I had a few things out of order, and once the code was straigthened up I was able to use .empty() to clear the old posts without wiping out things I wanted to keep. After finishing pagination I moved on to the search function. I found a good example of sample code, but need to figure out how to incorporate the functionality into my own site. I was just starting to get into this when we got a new assignment: create a building cost calculator for a theoretical cube house. I really felt good about this one. I saw the project clearly, and finished before the day was over. Wrote a lot of functions, and got them to work while also updating html input fields. Finished with an excellent scrum. Time to go home."
