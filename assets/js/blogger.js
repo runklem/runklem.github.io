@@ -64,6 +64,7 @@ function search() {
  
         // Retrieve the input field text and reset the count to zero
         var filter = $(this).val(), count = 0;
+        filter = filter.replace(/\s/g, "");
  
  		// Loop through the comment list
         $(".blogpost").each(function(){
