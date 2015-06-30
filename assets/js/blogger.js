@@ -98,8 +98,12 @@ function hideContentForSearch() {
 
 function showHiddenContent() {
 	$("#search-second").focusout(function() {
+		$("#search-second").val("");
 		$(".searchHide").show();
 		$("#filter-count").hide();
+
+		$("#blog").empty();
+		defaultPageLoad(postsPerPage);
 	});
 }
 
