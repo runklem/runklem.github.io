@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/01/2015",
+		"title":"Day 23",
+		"text":"Full time now on the survey project. Started the day with a few layout issues on my webpage. I was able to clean up the html and css which better organized the code and solved the problem. As Ryan and I began integrating what we had both been working on I realized there was still a formatting issue related to building the sidebar. As the sidebar grew it continually pushed the question blocks down. The solution wasn't obvious, so I had to dive back into the details of the code, and undo a lot of what I had in place. Ultimately, I relaized the main problem was in the relationship between sidebar and question block parent elements. Fixing the position of the sidebar also caused a change in the size of its parent element which necessiated a few unexpected changes in the css sizing. Ending the day by wrapping up a few user interface items like changing the title by clicking, and populating the sidebar with the new value. Tomorrow I'm going to focus on creating the page for the individuals who are taking the survey, continue integration with Ryan's functions, and work on tweeking UI elements as time permits."
+		},
+		{
 		"date":"06/30/2015",
 		"title":"Day 22",
 		"text":"Finished the blog project first. A few minutes of work and the removal of whitespace was taken care of. From there I started the writing of a few basic survey build functions for our group project which was intended to help understand the way in which our data file is accessed. I hadn't spent much time on this when I realized it all seemed like wasted effort without an actual page to display the results, so I dove back in to a number of html and css tutorials I had done in the past to remind myself how to structure and style content in a usable way. This task accounted for most of the rest of my day, and we now have a respectable looking web page to display our functionality. Tomorrow I'll be writing the jquery event listeners that will trigger the build functions. Ryan and I will be working closely to incorporate this complete set of functionality. For the time being I'll have to set a few of the buttons to dumby page loads, so we have a placeholder that will ultimately be replaced by saving and loading functionaility."
