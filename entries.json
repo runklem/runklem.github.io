@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"06/30/2015",
+		"title":"Day 22",
+		"text":"Finished the blog project first. A few minutes of work and the removal of whitespace was taken care of. From there I started the writing of a few basic survey build functions for our group project which was intended to help understand the way in which our data file is accessed. I hadn't spent much time on this when I realized it all seemed like wasted effort without an actual page to display the results, so I dove back in to a number of html and css tutorials I had done in the past to remind myself how to structure and style content in a usable way. This task accounted for most of the rest of my day, and we now have a respectable looking web page to display our functionality. Tomorrow I'll be writing the jquery event listeners that will trigger the build functions. Ryan and I will be working closely to incorporate this complete set of functionality. For the time being I'll have to set a few of the buttons to dumby page loads, so we have a placeholder that will ultimately be replaced by saving and loading functionaility."
+		},
+		{
 		"date":"06/29/2015",
 		"title":"Day 21",
 		"text":"Spent the morning working on my blog project. The search function is now essentially complete, I have to add the feature that disregards whitespace, and I have one little bit of buggy functionality related to backspaces in the secondary search field. I don't think either of these issues will require much time to resolve.<br><br>We started a new group project today building an application that allows a user to create survey forms. I started by writing a basic html structure to begin testing navigation functions for adding questions to the survey as well as displaying a sidebar overview that will functiona primarily for bookmark reference. I still need to work on adding new questions, and properly displaying the question panes. Will need to work out better styling soon, but for now trying to address the larger problems."
