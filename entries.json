@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/02/2015",
+		"title":"Day 24",
+		"text":"Finishing up the front end work for the survey project. Managed to get most of the interaction working. The load feature now displays a list of surveys by title that are in the database, and gives the user the option to choose which one to load. Ryan and I spent most of the morning and early afternoon working the two sides of this loading functionality where he was trying to incorporate his constructor templates with the menu selectors, and I was trying to read the data to display the actual database entries in an accessible format. My next task is to read the inputs from the survey taker page, and form the JSON file for shipment to the database. Spent most of my afternoon studying the data structure, and figuring out how to actually access and modify it. This was no small task for me as this is what I struggle with most: the literal syntax of accessing data structure. Monday morning we should be able to put the finishing touches on it, and have a working MVP before moving on to C# on Tuesday."
+		},
+		{
 		"date":"07/01/2015",
 		"title":"Day 23",
 		"text":"Full time now on the survey project. Started the day with a few layout issues on my webpage. I was able to clean up the html and css which better organized the code and solved the problem. As Ryan and I began integrating what we had both been working on I realized there was still a formatting issue related to building the sidebar. As the sidebar grew it continually pushed the question blocks down. The solution wasn't obvious, so I had to dive back into the details of the code, and undo a lot of what I had in place. Ultimately, I relaized the main problem was in the relationship between sidebar and question block parent elements. Fixing the position of the sidebar also caused a change in the size of its parent element which necessiated a few unexpected changes in the css sizing. Ending the day by wrapping up a few user interface items like changing the title by clicking, and populating the sidebar with the new value. Tomorrow I'm going to focus on creating the page for the individuals who are taking the survey, continue integration with Ryan's functions, and work on tweeking UI elements as time permits."
