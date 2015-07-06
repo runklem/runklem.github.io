@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/06/2015",
+		"title":"Day 25",
+		"text":"Wrapped up our survey project this morning with a respectable MVP. The project has been tricky because of the high degree of interactivity required between our various code sets, and especially with the Mongo database. It's been particularly difficult trying to write code for pieces of the puzzle which are incomplete - i.e. trying to collect and save data with a placeholder form while the dynamic functionality of that form is being built. In the end I think the team communicated very well, and built a lot of functionality in just a handful of days.<br><br>... and with that our time focusing on Javascript is complete. I'm looking forward to beginning C# tomorrow, and taking on the next challenge. Ultimately, I think I will be spending quite a bit more time with web technology because of the nature of my personal project, but for now it's on to the next thing."
+		},
+		{
 		"date":"07/02/2015",
 		"title":"Day 24",
 		"text":"Finishing up the front end work for the survey project. Managed to get most of the interaction working. The load feature now displays a list of surveys by title that are in the database, and gives the user the option to choose which one to load. Ryan and I spent most of the morning and early afternoon working the two sides of this loading functionality where he was trying to incorporate his constructor templates with the menu selectors, and I was trying to read the data to display the actual database entries in an accessible format. My next task is to read the inputs from the survey taker page, and form the JSON file for shipment to the database. Spent most of my afternoon studying the data structure, and figuring out how to actually access and modify it. This was no small task for me as this is what I struggle with most: the literal syntax of accessing data structure. Monday morning we should be able to put the finishing touches on it, and have a working MVP before moving on to C# on Tuesday."
