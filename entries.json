@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/07/2015",
+		"title":"Day 26",
+		"text":"Started C# today. First half of the day was an excellent lecture covering class data structure. Started writing code after lunch, and felt like I really understood what I was doing. Unfortunately, I was going down the wrong rabbit hole in terms of practical implementation. The project is to create a robot object with an abstract robot class and two interfaces: one for power supply, and one for parts. I had initially set everything up very quickly, and printed lines to the console. Unfortunately, I hadn't properly established my abstract class, and needed to do some serious reconfiguration which invloved syntax that I couldn't figure out how to navigate. After a rather complex series of hints and instructions I was able to get everything worked out into the structure and syntax needed. I'm now going to take a few documentation-type notes on this code, and finish out the last parts needed to complete the assignment. I'm struggling to recount this in greater detail because the details remain vague, but the two greatest challenges specifically are the strange (to me) way in which variables are declared, and the highly object oriented nature of the language."
+		},
+		{
 		"date":"07/06/2015",
 		"title":"Day 25",
 		"text":"Wrapped up our survey project this morning with a respectable MVP. The project has been tricky because of the high degree of interactivity required between our various code sets, and especially with the Mongo database. It's been particularly difficult trying to write code for pieces of the puzzle which are incomplete - i.e. trying to collect and save data with a placeholder form while the dynamic functionality of that form is being built. In the end I think the team communicated very well, and built a lot of functionality in just a handful of days.<br><br>... and with that our time focusing on Javascript is complete. I'm looking forward to beginning C# tomorrow, and taking on the next challenge. Ultimately, I think I will be spending quite a bit more time with web technology because of the nature of my personal project, but for now it's on to the next thing."
