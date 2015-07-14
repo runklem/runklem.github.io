@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/14/2015",
+		"title":"Day 31",
+		"text":"Began a new group project today: building software for a vending machine company. I'm handling the GUI aspect which will provide access to business statistics, machine data, and stats by city. It's been a particularly frustrating day that feels exactly like pyGames day 1 - i.e. I need the same programming skills I've been working with, but they're in a different context which makes it difficult. The Visual Studio form builder also feels a bit clunky right now because I've never used it. In this case the challenge has really ended up being trying to figure out how to code in a new context while also figuring out how to use a new aspect of the software which has a lot of unfamiliar functionality. Need to step away, and refocus for tomorrow."
+		},
+		{
 		"date":"07/13/2015",
 		"title":"Day 30",
 		"text":"We started our first C# group project today: a remaking of our earlier Lemonade Stand effort, but with more features. I wrote a few small class stubs for ingredients, but my main contributions were writing the Player, Shipment, and Weather classes. The Player class was our solution to the establishment of the lemonade stand while allowing for the recording of high scores and multi-player games. The Shipment class was established to facilitate a link between the supplier and the stand, and also to add the assignment requirement of allowing for multi-day shipping times based on comparison between stand and supplier locations. The Weather class is the primary demand generator where the total number of potential buyers is a product of the temperature and precipitation. The demand level is created by using the randomly generated temperature, and increasing demand for sunny days by 20 percent then decreasing demand by 20 percent for rainy days. Ultimately, the weather demand generator will by used further in the Customer class to establish an individual's willingness to buy which will adjust based on the relationship between weather and price."
