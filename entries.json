@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/15/2015",
+		"title":"Day 32",
+		"text":"Continued progress with our vending machine software. Started the day by reworking the basic layout of the UI. I was thinking about the layout as something similar to a web page where content areas change on click, but the forms project I'm using doesn't allow this type of functionality (at least not in any way I've found to access). Ultimately, I reorganized the content into a series of tabs which does essentially what I had initially intended via a different control type. Once the layout was set the task was simply adding all necssary components, then hooking them up to the proper function calls. Not all data is filtered in the way it needs to be, but the foundations are there to show a final product. Tomorrow the task will be to generating reports such as profitability by machine, city, etc. Also, we need to add functionality so the business owner can create a new machine, and work on bonus features including a representation of a field tech interface as well as needs-service flags that could be used by administrators."
+		},
+		{
 		"date":"07/14/2015",
 		"title":"Day 31",
 		"text":"Began a new group project today: building software for a vending machine company. I'm handling the GUI aspect which will provide access to business statistics, machine data, and stats by city. It's been a particularly frustrating day that feels exactly like pyGames day 1 - i.e. I need the same programming skills I've been working with, but they're in a different context which makes it difficult. The Visual Studio form builder also feels a bit clunky right now because I've never used it. In this case the challenge has really ended up being trying to figure out how to code in a new context while also figuring out how to use a new aspect of the software which has a lot of unfamiliar functionality. Need to step away, and refocus for tomorrow."
