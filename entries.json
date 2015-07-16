@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/16/2015",
+		"title":"Day 33",
+		"text":"Finished the UI today, and got essentially all of the functionality hooked up. There are refinements that still need to be made in some of the data fields: formatting, changing cells, etc., but the software is essentially running as a viable product. I finished my day by beginning the export reports to pdf functionality. A little hung up on establishing an assembly which is needed for referencing pdf table creation. Think I'm going to pick this up in the morning. Starting to feel like the end of the week, and a long night is probably not going to help productivity tomorrow. I noticed what seems like a useful tutorial before shutting down. I may watch that tonight in preperation for the morning, but time for a little rest."
+		},	
+		{
 		"date":"07/15/2015",
 		"title":"Day 32",
 		"text":"Continued progress with our vending machine software. Started the day by reworking the basic layout of the UI. I was thinking about the layout as something similar to a web page where content areas change on click, but the forms project I'm using doesn't allow this type of functionality (at least not in any way I've found to access). Ultimately, I reorganized the content into a series of tabs which does essentially what I had initially intended via a different control type. Once the layout was set the task was simply adding all necssary components, then hooking them up to the proper function calls. Not all data is filtered in the way it needs to be, but the foundations are there to show a final product. Tomorrow the task will be to generating reports such as profitability by machine, city, etc. Also, we need to add functionality so the business owner can create a new machine, and work on bonus features including a representation of a field tech interface as well as needs-service flags that could be used by administrators."
