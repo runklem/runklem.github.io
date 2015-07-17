@@ -1,6 +1,11 @@
 {
 	"entries":[
 		{
+		"date":"07/17/2015",
+		"title":"Day 34",
+		"text":"Spent my day getting PDF and CSV exports working. All are now functioning, and I moved on to generating graphs. Still have a fair bit of work to do to get the data out of the table correctly. As it stands we have a very fully developed piece of software. Long week; time for a break."
+		},	
+		{
 		"date":"07/16/2015",
 		"title":"Day 33",
 		"text":"Finished the UI today, and got essentially all of the functionality hooked up. There are refinements that still need to be made in some of the data fields: formatting, changing cells, etc., but the software is essentially running as a viable product. I finished my day by beginning the export reports to pdf functionality. A little hung up on establishing an assembly which is needed for referencing pdf table creation. Think I'm going to pick this up in the morning. Starting to feel like the end of the week, and a long night is probably not going to help productivity tomorrow. I noticed what seems like a useful tutorial before shutting down. I may watch that tonight in preperation for the morning, but time for a little rest."
