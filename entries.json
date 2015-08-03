@@ -1,6 +1,21 @@
 {
     "entries":[
         {
+        "date":"08/03/2015",
+        "title":"MVC/Salesforce Project",
+        "text":"Presenting my latest project today: a web app written in ASP.NET MVC framework that includes Salesforce integration. Not a lot new from a classrom perspective, but probably the most difficult week so far. First, there was the matter of learning the MVC framework which we hadn't used previously. Then there was the matter of getting to know Salesforce well enough to do anything at all with it. These aspects, though, challenging were not the most difficult part (by now we've done so much with technology that we have no experience with a lack of familiarity is starting to feel comfortable). The most difficult part for me was the very different nature of manipulating the MVC framework. Visual Studio creates so much code for you that the task of programming with it is far more like trying to understand with no explanation code that someone else has written for you, then trying to add to it the additional functionality that you need for your specific task. I assume this is not unlike working with an organization's legacy code, and is perhaps the nearest simulation we've seen to the daily work of a real world developer.
+
+            For my project I focused on several key operations that seem to have the greatest relevance to a business environment:
+
+            First, I made small customizations to the website to re-learn how to do familiar things in an unfamiliar setting like redirect the target of a button click, add images, change links, etc. I then created two user entry pages to save data to my local database. Ultimately, I incorporated access to the local database via an admin panel that requires a login to access.
+
+            My primary login is via Salesforce, but I also added Google authentication for the practice of creating additional authentication options.
+
+            The Salesforce login gives the user access to default data within a basic developer account. I set up access to the Salesforce Accounts info via a tutorial. The challenge leftover from this is that the heavy lifting in the tutorial was done via a download install. From there in order to pull the contacts information I had to reverese engineer the code that was pulled in via the install, and determine what needed to be changed to get the contact info. It's proved to be quite a challenge learning to get inside someone else's code to make it do what you need, but eventually I solved this problem. The key detail seemed to be setting the namespace correctly on the new classes I was creating for my own modifications. Once I had that set up correctly the last details fell into place rather easily.
+
+            In the end the primary functionality of my app is to store user input to a local database, authenticate through Google and Salesforce, then via an admin panel retrieve the data from both the local database and the Accounts and Contacts pages in Salesforce."
+        },
+        {
         "date":"07/24/2015",
         "title":"Mobile News Feed Project",
         "text":"We've moved to a different form now for our blog posts. Instead of a daily reflection we're now doing end of project reflections. In this case we've just finished an individual project which simulates the connection between a phone and server which has news feed subscriptions. We covered a lot of ground with this one, so I'll run through a list for review:
